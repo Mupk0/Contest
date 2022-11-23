@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		570C145E28FED4230094E4B4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C145D28FED4220094E4B4 /* UITextView.swift */; };
+		570C146028FED4480094E4B4 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C145F28FED4480094E4B4 /* UIFont.swift */; };
+		570C146228FED4720094E4B4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C146128FED4720094E4B4 /* UIViewController.swift */; };
+		570C146628FEEF720094E4B4 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C146528FEEF720094E4B4 /* TextView.swift */; };
+		570C1DD3290012560094E4B4 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DD2290012560094E4B4 /* SegmentedControl.swift */; };
+		570C1DD5290027550094E4B4 /* CircleCurrectColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DD4290027550094E4B4 /* CircleCurrectColorView.swift */; };
+		570C1DD729009CF40094E4B4 /* PenToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DD629009CF30094E4B4 /* PenToolView.swift */; };
+		570C1DD929009D630094E4B4 /* BrushToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DD829009D630094E4B4 /* BrushToolView.swift */; };
+		570C1DDB29009FEF0094E4B4 /* PencilToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DDA29009FEF0094E4B4 /* PencilToolView.swift */; };
+		570C1DDD2900A1330094E4B4 /* LassoToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DDC2900A1330094E4B4 /* LassoToolView.swift */; };
+		570C1DDF2900A1BE0094E4B4 /* EraserToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DDE2900A1BE0094E4B4 /* EraserToolView.swift */; };
+		570C1DE12900A2230094E4B4 /* ToolsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DE02900A2230094E4B4 /* ToolsStackView.swift */; };
+		570C1DE32900A2690094E4B4 /* ToolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C1DE22900A2690094E4B4 /* ToolProtocol.swift */; };
+		573F44C729084AF000869480 /* ChessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44C629084AF000869480 /* ChessLayer.swift */; };
+		573F44C9290871AE00869480 /* ChessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44C8290871AE00869480 /* ChessSlider.swift */; };
+		573F44CB2909D20400869480 /* RectangleCurrentColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44CA2909D20400869480 /* RectangleCurrentColorView.swift */; };
+		573F44CD290B094A00869480 /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44CC290B094A00869480 /* ThumbView.swift */; };
+		573F44D1290BF23500869480 /* TextLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44D0290BF23500869480 /* TextLayoutManager.swift */; };
+		573F44D3290C119900869480 /* NSLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44D2290C119900869480 /* NSLayoutManager.swift */; };
+		573F44D5290C11A800869480 /* NSTextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44D4290C11A800869480 /* NSTextContainer.swift */; };
+		573F44D7290D4DFC00869480 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44D6290D4DFC00869480 /* UICollectionView.swift */; };
+		573F44D9290D602800869480 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44D8290D602800869480 /* String.swift */; };
+		573F44DB290D72F300869480 /* FontCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44DA290D72F300869480 /* FontCollectionViewCell.swift */; };
+		573F44DD290F11CF00869480 /* ZoomOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44DC290F11CF00869480 /* ZoomOutView.swift */; };
+		573F44DF290F19A500869480 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44DE290F19A500869480 /* CGRect.swift */; };
+		573F44E1290FD80600869480 /* FontsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44E0290FD80600869480 /* FontsCollectionView.swift */; };
+		573F44E4291015D200869480 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F44E3291015D200869480 /* Fonts.swift */; };
+		57A7007528F2E85B0055E821 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7007428F2E85B0055E821 /* UITableView.swift */; };
+		57A7007728F2ECFA0055E821 /* ViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7007628F2ECFA0055E821 /* ViewModelConfigurable.swift */; };
+		57A7007928F2ED0A0055E821 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7007828F2ED0A0055E821 /* UITableViewCell.swift */; };
+		57A7007B28F302BC0055E821 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7007A28F302BC0055E821 /* ImagePicker.swift */; };
+		57AC7A9B29044BF700781610 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC7A9A29044BF700781610 /* Slider.swift */; };
+		57AC7A9D2905B6BD00781610 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC7A9C2905B6BD00781610 /* UIColor.swift */; };
+		57AD12FE28F35986006BF82F /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD12FD28F35986006BF82F /* DrawingViewController.swift */; };
+		57AD130028F37CDC006BF82F /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD12FF28F37CDC006BF82F /* ColorPickerViewController.swift */; };
+		57AD130228F432F4006BF82F /* TriangleSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD130128F432F4006BF82F /* TriangleSliderView.swift */; };
+		57AD130428F4330F006BF82F /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD130328F4330F006BF82F /* TriangleView.swift */; };
+		57AD153D28F44CBA006BF82F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD153C28F44CBA006BF82F /* UIView.swift */; };
+		57AD154128F455E9006BF82F /* ColorSpectrumPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD154028F455E9006BF82F /* ColorSpectrumPickerView.swift */; };
+		57AD154328F4810E006BF82F /* ToolsWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD154228F4810E006BF82F /* ToolsWeightView.swift */; };
+		57CEBB9A28F2D6CF00290736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CEBB9928F2D6CF00290736 /* AppDelegate.swift */; };
+		57CEBB9E28F2D6CF00290736 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CEBB9D28F2D6CF00290736 /* MainViewController.swift */; };
+		57CEBBA328F2D6D000290736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CEBBA228F2D6D000290736 /* Assets.xcassets */; };
+		57CEBBA628F2D6D000290736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CEBBA428F2D6D000290736 /* LaunchScreen.storyboard */; };
+		57CEBBB128F2D6D000290736 /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CEBBB028F2D6D000290736 /* testTests.swift */; };
+		57CEBBBB28F2D6D000290736 /* TelegramContestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CEBBBA28F2D6D000290736 /* TelegramContestUITests.swift */; };
+		57CEBBBD28F2D6D000290736 /* TelegramContestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CEBBBC28F2D6D000290736 /* TelegramContestUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57CEBBAD28F2D6D000290736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57CEBB8E28F2D6CF00290736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57CEBB9528F2D6CF00290736;
+			remoteInfo = test;
+		};
+		57CEBBB728F2D6D000290736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57CEBB8E28F2D6CF00290736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57CEBB9528F2D6CF00290736;
+			remoteInfo = test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		570C145D28FED4220094E4B4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		570C145F28FED4480094E4B4 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		570C146128FED4720094E4B4 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		570C146528FEEF720094E4B4 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		570C1DD2290012560094E4B4 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		570C1DD4290027550094E4B4 /* CircleCurrectColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCurrectColorView.swift; sourceTree = "<group>"; };
+		570C1DD629009CF30094E4B4 /* PenToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenToolView.swift; sourceTree = "<group>"; };
+		570C1DD829009D630094E4B4 /* BrushToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushToolView.swift; sourceTree = "<group>"; };
+		570C1DDA29009FEF0094E4B4 /* PencilToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilToolView.swift; sourceTree = "<group>"; };
+		570C1DDC2900A1330094E4B4 /* LassoToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LassoToolView.swift; sourceTree = "<group>"; };
+		570C1DDE2900A1BE0094E4B4 /* EraserToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraserToolView.swift; sourceTree = "<group>"; };
+		570C1DE02900A2230094E4B4 /* ToolsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsStackView.swift; sourceTree = "<group>"; };
+		570C1DE22900A2690094E4B4 /* ToolProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolProtocol.swift; sourceTree = "<group>"; };
+		573F44C629084AF000869480 /* ChessLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessLayer.swift; sourceTree = "<group>"; };
+		573F44C8290871AE00869480 /* ChessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessSlider.swift; sourceTree = "<group>"; };
+		573F44CA2909D20400869480 /* RectangleCurrentColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCurrentColorView.swift; sourceTree = "<group>"; };
+		573F44CC290B094A00869480 /* ThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
+		573F44D0290BF23500869480 /* TextLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLayoutManager.swift; sourceTree = "<group>"; };
+		573F44D2290C119900869480 /* NSLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutManager.swift; sourceTree = "<group>"; };
+		573F44D4290C11A800869480 /* NSTextContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextContainer.swift; sourceTree = "<group>"; };
+		573F44D6290D4DFC00869480 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		573F44D8290D602800869480 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		573F44DA290D72F300869480 /* FontCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCollectionViewCell.swift; sourceTree = "<group>"; };
+		573F44DC290F11CF00869480 /* ZoomOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomOutView.swift; sourceTree = "<group>"; };
+		573F44DE290F19A500869480 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		573F44E0290FD80600869480 /* FontsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsCollectionView.swift; sourceTree = "<group>"; };
+		573F44E3291015D200869480 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		57A7007428F2E85B0055E821 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		57A7007628F2ECFA0055E821 /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
+		57A7007828F2ED0A0055E821 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		57A7007A28F302BC0055E821 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		57AC7A9A29044BF700781610 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		57AC7A9C2905B6BD00781610 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		57AD12FD28F35986006BF82F /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		57AD12FF28F37CDC006BF82F /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		57AD130128F432F4006BF82F /* TriangleSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleSliderView.swift; sourceTree = "<group>"; };
+		57AD130328F4330F006BF82F /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		57AD153C28F44CBA006BF82F /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		57AD154028F455E9006BF82F /* ColorSpectrumPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumPickerView.swift; sourceTree = "<group>"; };
+		57AD154228F4810E006BF82F /* ToolsWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsWeightView.swift; sourceTree = "<group>"; };
+		57CEBB9628F2D6CF00290736 /* TelegramContest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramContest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CEBB9928F2D6CF00290736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57CEBB9D28F2D6CF00290736 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		57CEBBA228F2D6D000290736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57CEBBA528F2D6D000290736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57CEBBA728F2D6D000290736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57CEBBAC28F2D6D000290736 /* TelegramContestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramContestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CEBBB028F2D6D000290736 /* testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTests.swift; sourceTree = "<group>"; };
+		57CEBBB628F2D6D000290736 /* TelegramContestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramContestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CEBBBA28F2D6D000290736 /* TelegramContestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramContestUITests.swift; sourceTree = "<group>"; };
+		57CEBBBC28F2D6D000290736 /* TelegramContestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramContestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57CEBB9328F2D6CF00290736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CEBBA928F2D6D000290736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CEBBB328F2D6D000290736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		570C1DCF290011D80094E4B4 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				57A7007A28F302BC0055E821 /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		570C1DD02900120E0094E4B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57AC7867290180FE00781610 /* Tools */,
+				573F44E8291017FA00869480 /* TextView */,
+				573F44E7291017B900869480 /* ColorSelector */,
+				573F44E2291015BE00869480 /* Fonts */,
+				573F44E92910188300869480 /* TriangleSlider */,
+				573F44DC290F11CF00869480 /* ZoomOutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		570C1DD12900121B0094E4B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57CEBB9D28F2D6CF00290736 /* MainViewController.swift */,
+				57AD12FD28F35986006BF82F /* DrawingViewController.swift */,
+				57AD12FF28F37CDC006BF82F /* ColorPickerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		573F44E2291015BE00869480 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				573F44E0290FD80600869480 /* FontsCollectionView.swift */,
+				573F44DA290D72F300869480 /* FontCollectionViewCell.swift */,
+				573F44E3291015D200869480 /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		573F44E7291017B900869480 /* ColorSelector */ = {
+			isa = PBXGroup;
+			children = (
+				570C1DD4290027550094E4B4 /* CircleCurrectColorView.swift */,
+				573F44CA2909D20400869480 /* RectangleCurrentColorView.swift */,
+				573F44CC290B094A00869480 /* ThumbView.swift */,
+				573F44C629084AF000869480 /* ChessLayer.swift */,
+				57AD154028F455E9006BF82F /* ColorSpectrumPickerView.swift */,
+				57AC7A9A29044BF700781610 /* Slider.swift */,
+				573F44C8290871AE00869480 /* ChessSlider.swift */,
+				570C1DD2290012560094E4B4 /* SegmentedControl.swift */,
+			);
+			path = ColorSelector;
+			sourceTree = "<group>";
+		};
+		573F44E8291017FA00869480 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				570C146528FEEF720094E4B4 /* TextView.swift */,
+				573F44D0290BF23500869480 /* TextLayoutManager.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		573F44E92910188300869480 /* TriangleSlider */ = {
+			isa = PBXGroup;
+			children = (
+				57AD130128F432F4006BF82F /* TriangleSliderView.swift */,
+				57AD130328F4330F006BF82F /* TriangleView.swift */,
+			);
+			path = TriangleSlider;
+			sourceTree = "<group>";
+		};
+		57A7007228F2DD850055E821 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57CEBBA228F2D6D000290736 /* Assets.xcassets */,
+				57CEBBA428F2D6D000290736 /* LaunchScreen.storyboard */,
+				57CEBBA728F2D6D000290736 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57A7007328F2E3040055E821 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				573F44DE290F19A500869480 /* CGRect.swift */,
+				573F44D6290D4DFC00869480 /* UICollectionView.swift */,
+				57A7007428F2E85B0055E821 /* UITableView.swift */,
+				57A7007828F2ED0A0055E821 /* UITableViewCell.swift */,
+				57A7007628F2ECFA0055E821 /* ViewModelConfigurable.swift */,
+				57AD153C28F44CBA006BF82F /* UIView.swift */,
+				570C145D28FED4220094E4B4 /* UITextView.swift */,
+				570C145F28FED4480094E4B4 /* UIFont.swift */,
+				570C146128FED4720094E4B4 /* UIViewController.swift */,
+				57AC7A9C2905B6BD00781610 /* UIColor.swift */,
+				573F44D2290C119900869480 /* NSLayoutManager.swift */,
+				573F44D4290C11A800869480 /* NSTextContainer.swift */,
+				573F44D8290D602800869480 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57AC7867290180FE00781610 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				570C1DE22900A2690094E4B4 /* ToolProtocol.swift */,
+				57AD154228F4810E006BF82F /* ToolsWeightView.swift */,
+				570C1DE02900A2230094E4B4 /* ToolsStackView.swift */,
+				570C1DD629009CF30094E4B4 /* PenToolView.swift */,
+				570C1DD829009D630094E4B4 /* BrushToolView.swift */,
+				570C1DDA29009FEF0094E4B4 /* PencilToolView.swift */,
+				570C1DDC2900A1330094E4B4 /* LassoToolView.swift */,
+				570C1DDE2900A1BE0094E4B4 /* EraserToolView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		57CEBB8D28F2D6CF00290736 = {
+			isa = PBXGroup;
+			children = (
+				57CEBB9828F2D6CF00290736 /* TelegramContest */,
+				57CEBBAF28F2D6D000290736 /* TelegramContestTests */,
+				57CEBBB928F2D6D000290736 /* TelegramContestUITests */,
+				57CEBB9728F2D6CF00290736 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57CEBB9728F2D6CF00290736 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57CEBB9628F2D6CF00290736 /* TelegramContest.app */,
+				57CEBBAC28F2D6D000290736 /* TelegramContestTests.xctest */,
+				57CEBBB628F2D6D000290736 /* TelegramContestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57CEBB9828F2D6CF00290736 /* TelegramContest */ = {
+			isa = PBXGroup;
+			children = (
+				57CEBB9928F2D6CF00290736 /* AppDelegate.swift */,
+				570C1DD12900121B0094E4B4 /* Controllers */,
+				570C1DD02900120E0094E4B4 /* Views */,
+				570C1DCF290011D80094E4B4 /* ImagePicker */,
+				57A7007228F2DD850055E821 /* Resources */,
+				57A7007328F2E3040055E821 /* Extensions */,
+			);
+			path = TelegramContest;
+			sourceTree = "<group>";
+		};
+		57CEBBAF28F2D6D000290736 /* TelegramContestTests */ = {
+			isa = PBXGroup;
+			children = (
+				57CEBBB028F2D6D000290736 /* testTests.swift */,
+			);
+			path = TelegramContestTests;
+			sourceTree = "<group>";
+		};
+		57CEBBB928F2D6D000290736 /* TelegramContestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57CEBBBA28F2D6D000290736 /* TelegramContestUITests.swift */,
+				57CEBBBC28F2D6D000290736 /* TelegramContestUITestsLaunchTests.swift */,
+			);
+			path = TelegramContestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57CEBB9528F2D6CF00290736 /* TelegramContest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57CEBBC028F2D6D000290736 /* Build configuration list for PBXNativeTarget "TelegramContest" */;
+			buildPhases = (
+				57CEBB9228F2D6CF00290736 /* Sources */,
+				57CEBB9328F2D6CF00290736 /* Frameworks */,
+				57CEBB9428F2D6CF00290736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelegramContest;
+			productName = test;
+			productReference = 57CEBB9628F2D6CF00290736 /* TelegramContest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57CEBBAB28F2D6D000290736 /* TelegramContestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57CEBBC328F2D6D000290736 /* Build configuration list for PBXNativeTarget "TelegramContestTests" */;
+			buildPhases = (
+				57CEBBA828F2D6D000290736 /* Sources */,
+				57CEBBA928F2D6D000290736 /* Frameworks */,
+				57CEBBAA28F2D6D000290736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57CEBBAE28F2D6D000290736 /* PBXTargetDependency */,
+			);
+			name = TelegramContestTests;
+			productName = testTests;
+			productReference = 57CEBBAC28F2D6D000290736 /* TelegramContestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57CEBBB528F2D6D000290736 /* TelegramContestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57CEBBC628F2D6D000290736 /* Build configuration list for PBXNativeTarget "TelegramContestUITests" */;
+			buildPhases = (
+				57CEBBB228F2D6D000290736 /* Sources */,
+				57CEBBB328F2D6D000290736 /* Frameworks */,
+				57CEBBB428F2D6D000290736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57CEBBB828F2D6D000290736 /* PBXTargetDependency */,
+			);
+			name = TelegramContestUITests;
+			productName = testUITests;
+			productReference = 57CEBBB628F2D6D000290736 /* TelegramContestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57CEBB8E28F2D6CF00290736 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					57CEBB9528F2D6CF00290736 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					57CEBBAB28F2D6D000290736 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 57CEBB9528F2D6CF00290736;
+					};
+					57CEBBB528F2D6D000290736 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 57CEBB9528F2D6CF00290736;
+					};
+				};
+			};
+			buildConfigurationList = 57CEBB9128F2D6CF00290736 /* Build configuration list for PBXProject "TelegramContest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57CEBB8D28F2D6CF00290736;
+			productRefGroup = 57CEBB9728F2D6CF00290736 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57CEBB9528F2D6CF00290736 /* TelegramContest */,
+				57CEBBAB28F2D6D000290736 /* TelegramContestTests */,
+				57CEBBB528F2D6D000290736 /* TelegramContestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57CEBB9428F2D6CF00290736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CEBBA628F2D6D000290736 /* LaunchScreen.storyboard in Resources */,
+				57CEBBA328F2D6D000290736 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CEBBAA28F2D6D000290736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CEBBB428F2D6D000290736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57CEBB9228F2D6CF00290736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573F44E1290FD80600869480 /* FontsCollectionView.swift in Sources */,
+				57AD130428F4330F006BF82F /* TriangleView.swift in Sources */,
+				57A7007928F2ED0A0055E821 /* UITableViewCell.swift in Sources */,
+				573F44D3290C119900869480 /* NSLayoutManager.swift in Sources */,
+				57CEBB9E28F2D6CF00290736 /* MainViewController.swift in Sources */,
+				57AC7A9B29044BF700781610 /* Slider.swift in Sources */,
+				57CEBB9A28F2D6CF00290736 /* AppDelegate.swift in Sources */,
+				573F44CD290B094A00869480 /* ThumbView.swift in Sources */,
+				573F44DF290F19A500869480 /* CGRect.swift in Sources */,
+				570C1DD5290027550094E4B4 /* CircleCurrectColorView.swift in Sources */,
+				57AD153D28F44CBA006BF82F /* UIView.swift in Sources */,
+				573F44C9290871AE00869480 /* ChessSlider.swift in Sources */,
+				57AD12FE28F35986006BF82F /* DrawingViewController.swift in Sources */,
+				570C1DD3290012560094E4B4 /* SegmentedControl.swift in Sources */,
+				570C1DE32900A2690094E4B4 /* ToolProtocol.swift in Sources */,
+				570C145E28FED4230094E4B4 /* UITextView.swift in Sources */,
+				570C146228FED4720094E4B4 /* UIViewController.swift in Sources */,
+				573F44CB2909D20400869480 /* RectangleCurrentColorView.swift in Sources */,
+				573F44C729084AF000869480 /* ChessLayer.swift in Sources */,
+				57AD130228F432F4006BF82F /* TriangleSliderView.swift in Sources */,
+				570C1DD729009CF40094E4B4 /* PenToolView.swift in Sources */,
+				570C1DE12900A2230094E4B4 /* ToolsStackView.swift in Sources */,
+				57A7007B28F302BC0055E821 /* ImagePicker.swift in Sources */,
+				570C1DDF2900A1BE0094E4B4 /* EraserToolView.swift in Sources */,
+				57AC7A9D2905B6BD00781610 /* UIColor.swift in Sources */,
+				573F44D5290C11A800869480 /* NSTextContainer.swift in Sources */,
+				57A7007528F2E85B0055E821 /* UITableView.swift in Sources */,
+				570C1DD929009D630094E4B4 /* BrushToolView.swift in Sources */,
+				573F44E4291015D200869480 /* Fonts.swift in Sources */,
+				57AD154328F4810E006BF82F /* ToolsWeightView.swift in Sources */,
+				573F44D9290D602800869480 /* String.swift in Sources */,
+				573F44D1290BF23500869480 /* TextLayoutManager.swift in Sources */,
+				570C1DDD2900A1330094E4B4 /* LassoToolView.swift in Sources */,
+				570C146028FED4480094E4B4 /* UIFont.swift in Sources */,
+				573F44D7290D4DFC00869480 /* UICollectionView.swift in Sources */,
+				57AD154128F455E9006BF82F /* ColorSpectrumPickerView.swift in Sources */,
+				57AD130028F37CDC006BF82F /* ColorPickerViewController.swift in Sources */,
+				570C146628FEEF720094E4B4 /* TextView.swift in Sources */,
+				573F44DD290F11CF00869480 /* ZoomOutView.swift in Sources */,
+				573F44DB290D72F300869480 /* FontCollectionViewCell.swift in Sources */,
+				57A7007728F2ECFA0055E821 /* ViewModelConfigurable.swift in Sources */,
+				570C1DDB29009FEF0094E4B4 /* PencilToolView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CEBBA828F2D6D000290736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CEBBB128F2D6D000290736 /* testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CEBBB228F2D6D000290736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CEBBBD28F2D6D000290736 /* TelegramContestUITestsLaunchTests.swift in Sources */,
+				57CEBBBB28F2D6D000290736 /* TelegramContestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57CEBBAE28F2D6D000290736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57CEBB9528F2D6CF00290736 /* TelegramContest */;
+			targetProxy = 57CEBBAD28F2D6D000290736 /* PBXContainerItemProxy */;
+		};
+		57CEBBB828F2D6D000290736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57CEBB9528F2D6CF00290736 /* TelegramContest */;
+			targetProxy = 57CEBBB728F2D6D000290736 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57CEBBA428F2D6D000290736 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57CEBBA528F2D6D000290736 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57CEBBBE28F2D6D000290736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57CEBBBF28F2D6D000290736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57CEBBC128F2D6D000290736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM8M7A6KC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelegramContest/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TelegramContest;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Приложение запрашивает доступ к камере";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Приложение запрашивает доступ к галерее";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Приложение запрашивает доступ к галерее";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contest.TelegramContest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		57CEBBC228F2D6D000290736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM8M7A6KC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelegramContest/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TelegramContest;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Приложение запрашивает доступ к камере";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Приложение запрашивает доступ к галерее";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Приложение запрашивает доступ к галерее";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contest.TelegramContest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		57CEBBC428F2D6D000290736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6939WNYZGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.testTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelegramContest.app/TelegramContest";
+			};
+			name = Debug;
+		};
+		57CEBBC528F2D6D000290736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6939WNYZGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.testTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelegramContest.app/TelegramContest";
+			};
+			name = Release;
+		};
+		57CEBBC728F2D6D000290736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6939WNYZGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.testUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TelegramContest;
+			};
+			name = Debug;
+		};
+		57CEBBC828F2D6D000290736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6939WNYZGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.testUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TelegramContest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57CEBB9128F2D6CF00290736 /* Build configuration list for PBXProject "TelegramContest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CEBBBE28F2D6D000290736 /* Debug */,
+				57CEBBBF28F2D6D000290736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57CEBBC028F2D6D000290736 /* Build configuration list for PBXNativeTarget "TelegramContest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CEBBC128F2D6D000290736 /* Debug */,
+				57CEBBC228F2D6D000290736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57CEBBC328F2D6D000290736 /* Build configuration list for PBXNativeTarget "TelegramContestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CEBBC428F2D6D000290736 /* Debug */,
+				57CEBBC528F2D6D000290736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57CEBBC628F2D6D000290736 /* Build configuration list for PBXNativeTarget "TelegramContestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CEBBC728F2D6D000290736 /* Debug */,
+				57CEBBC828F2D6D000290736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57CEBB8E28F2D6CF00290736 /* Project object */;
+}
